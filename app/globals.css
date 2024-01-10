@@ -12,7 +12,9 @@
 }
 .header {
   height:120px;
-  background: linear-gradient(to right, #1da1f2, #9ad7f7)
+  background: linear-gradient(to right, #1da1f2, #9ad7f7);
+  text-align:right
+  
 }
 .custom-image-class{
   border-radius: 60%;
@@ -41,10 +43,13 @@ p {
 .links, .buttons{
   position: relative;
   top: -40px;
-  margin-top:10px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  margin:10px auto ;
+  text-align: center
 }
 .custom-link {
   color:  #1da1f2;
@@ -58,7 +63,8 @@ p {
   position: relative;
   top: -8px;
   left:-3px;
-  color:rgb(141, 141, 141)
+  color:rgb(141, 141, 141);
+  
 }
 
 button {
@@ -66,4 +72,6 @@ button {
   border: 1px solid rgb(220, 220, 220);
   padding: 10px 25px;
   background-color: white;
+  margin-right : 10px;
+ 
 }

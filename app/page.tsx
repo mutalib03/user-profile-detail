@@ -3,6 +3,7 @@ import { Puff, Rings} from 'react-loading-icons'
 import { useEffect, useState } from 'react';
 import Image from 'next/image'  
 import Link from 'next/link';
+import { FaTimes } from 'react-icons/fa';
 
 interface User {
   gender: string;
@@ -80,12 +81,21 @@ export default function Home() {
 
     return () => clearInterval(intervalId)
   }, []);
+  const iconStyle = {
+    color: 'white',   
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    width:"15px",
+    height:"30px",
+    padding: "2px 6px",
+    borderRadius:"100%",
+    margin:"10px 10px"
+  };
 
   return (
     <div className="container">
       { data ? (
         <div className='detail-container'>
-           <div className="header"></div>
+           <div className="header"><FaTimes style={iconStyle}/></div>
            <div className='main'>
              <Image src={data.picture.large}
       width={100}
